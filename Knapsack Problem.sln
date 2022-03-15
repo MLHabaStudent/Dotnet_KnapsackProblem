@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knapsack Problem", "Knapsac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnapsackTest", "KnapsackTest\KnapsackTest.csproj", "{75DB3FFE-2E2F-42FC-8A32-FD4EA568D517}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnapsackForm", "KnapsackForm\KnapsackForm.csproj", "{7BFC0723-0183-46CC-89F1-BCE3F66DD030}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{75DB3FFE-2E2F-42FC-8A32-FD4EA568D517}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75DB3FFE-2E2F-42FC-8A32-FD4EA568D517}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75DB3FFE-2E2F-42FC-8A32-FD4EA568D517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BFC0723-0183-46CC-89F1-BCE3F66DD030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFC0723-0183-46CC-89F1-BCE3F66DD030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFC0723-0183-46CC-89F1-BCE3F66DD030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFC0723-0183-46CC-89F1-BCE3F66DD030}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
