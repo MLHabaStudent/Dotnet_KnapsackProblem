@@ -40,6 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lblWeight = new System.Windows.Forms.Label();
             this.lblValue = new System.Windows.Forms.Label();
+            this.chckSort = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtKnapsack
@@ -126,10 +127,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(9, 134);
+            this.button1.Location = new System.Drawing.Point(7, 150);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(223, 35);
+            this.button1.Size = new System.Drawing.Size(223, 24);
             this.button1.TabIndex = 9;
             this.button1.Text = "Solve";
             this.button1.UseVisualStyleBackColor = true;
@@ -163,11 +164,22 @@
             this.lblValue.TabIndex = 12;
             this.lblValue.Text = "Total value:";
             // 
+            // chckSort
+            // 
+            this.chckSort.AutoSize = true;
+            this.chckSort.Location = new System.Drawing.Point(9, 125);
+            this.chckSort.Name = "chckSort";
+            this.chckSort.Size = new System.Drawing.Size(75, 17);
+            this.chckSort.TabIndex = 14;
+            this.chckSort.Text = "Solve Sort";
+            this.chckSort.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 464);
+            this.Controls.Add(this.chckSort);
             this.Controls.Add(this.lblValue);
             this.Controls.Add(this.lblWeight);
             this.Controls.Add(this.label4);
@@ -205,6 +217,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblWeight;
         private System.Windows.Forms.Label lblValue;
+        private System.Windows.Forms.CheckBox chckSort;
     }
 }
 

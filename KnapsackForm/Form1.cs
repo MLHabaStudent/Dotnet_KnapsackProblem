@@ -32,10 +32,13 @@ namespace KnapsackForm
             Generator generator = new Generator(count, seed);
             Solver solver = new Solver();
 
-            solver.Solve(cap, generator.getItems());
+            if(chckSort.Checked)
+                solver.SolveSort(cap, generator.getItems());
+            else
+                solver.Solve(cap, generator.getItems());
 
-            txtItems.Text = generator.ToString();
-            txtKnapsack.Text = solver.ToString();
+            txtItems.Text = "Id\tWeight\tValue" + Environment.NewLine + generator.ToString();
+            txtKnapsack.Text = "Id\tWeight\tValue" + Environment.NewLine + solver.ToString();
             lblWeight.Text = "Total weight: " + solver.getWeight().ToString();
             lblValue.Text = "Total value: " + solver.getValue().ToString();
         }
