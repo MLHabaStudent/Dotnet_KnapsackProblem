@@ -38,6 +38,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblWeight = new System.Windows.Forms.Label();
+            this.lblValue = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtKnapsack
@@ -82,6 +84,7 @@
             this.txtCount.Name = "txtCount";
             this.txtCount.Size = new System.Drawing.Size(221, 20);
             this.txtCount.TabIndex = 4;
+            this.txtCount.TextChanged += new System.EventHandler(this.txtVerifyColor);
             // 
             // txtCap
             // 
@@ -90,6 +93,7 @@
             this.txtCap.Name = "txtCap";
             this.txtCap.Size = new System.Drawing.Size(221, 20);
             this.txtCap.TabIndex = 6;
+            this.txtCap.TextChanged += new System.EventHandler(this.txtVerifyColor);
             // 
             // label2
             // 
@@ -108,6 +112,7 @@
             this.txtSeed.Name = "txtSeed";
             this.txtSeed.Size = new System.Drawing.Size(221, 20);
             this.txtSeed.TabIndex = 8;
+            this.txtSeed.TextChanged += new System.EventHandler(this.txtVerifyColor);
             // 
             // label3
             // 
@@ -128,6 +133,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Solve";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -139,11 +145,31 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Knapsack";
             // 
+            // lblWeight
+            // 
+            this.lblWeight.AutoSize = true;
+            this.lblWeight.Location = new System.Drawing.Point(12, 442);
+            this.lblWeight.Name = "lblWeight";
+            this.lblWeight.Size = new System.Drawing.Size(68, 13);
+            this.lblWeight.TabIndex = 11;
+            this.lblWeight.Text = "Total weight:";
+            // 
+            // lblValue
+            // 
+            this.lblValue.AutoSize = true;
+            this.lblValue.Location = new System.Drawing.Point(248, 442);
+            this.lblValue.Name = "lblValue";
+            this.lblValue.Size = new System.Drawing.Size(63, 13);
+            this.lblValue.TabIndex = 12;
+            this.lblValue.Text = "Total value:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 446);
+            this.ClientSize = new System.Drawing.Size(484, 464);
+            this.Controls.Add(this.lblValue);
+            this.Controls.Add(this.lblWeight);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtSeed);
@@ -159,7 +185,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Knapsack Problem";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,6 +203,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblWeight;
+        private System.Windows.Forms.Label lblValue;
     }
 }
 

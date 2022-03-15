@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Knapsack Problem\Knapsack Problem.csproj">
+      <Project>{7acb43d6-c905-4157-895e-c6ce90aedd9f}</Project>
+      <Name>Knapsack Problem</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
