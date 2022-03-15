@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Knapsack_Problem
 {
-    internal class Generator
+    public class Generator
     {
         List<Item> items;
 

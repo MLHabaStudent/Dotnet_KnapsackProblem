@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Knapsack_Problem
 {
-    internal class Item
+    public class Item
     {
         public int id, weight, value;
 

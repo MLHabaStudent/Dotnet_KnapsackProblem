@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Knapsack_Problem
 {
-    internal class Solver
+    public class Solver
     {
         List<Item> knapsack;
         int totalWeight = 0,
