@@ -53,7 +53,7 @@ namespace Knapsack_Problem
             string str = string.Empty;
             foreach (Item item in knapsack)
             {
-                str += item.ToString() + "\n";
+                str += item.ToString() + Environment.NewLine;
             }
             return str;
         }

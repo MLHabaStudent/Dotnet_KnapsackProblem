@@ -31,7 +31,7 @@ namespace Knapsack_Problem
             string str = string.Empty;
             foreach(var item in items)
             {
-                str += item.ToString() + "\n";
+                str += item.ToString() + Environment.NewLine;
             }
             return str;
         }
