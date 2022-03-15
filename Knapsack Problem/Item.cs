@@ -8,17 +8,18 @@ namespace Knapsack_Problem
 {
     internal class Item
     {
-        public int weight, value;
+        public int id, weight, value;
 
-        public Item(int weight = 0, int value = 0)
+        public Item(int id, int weight = 0, int value = 0)
         {
+            this.id = id;
             this.weight = weight;
             this.value = value;
         }
 
         public override string ToString()
         {
-            String str = "W: " + this.weight + " V: " + this.value;
+            string str = id + "\tW: " + weight + "\tV: " + value;
             return str;
         }
     }

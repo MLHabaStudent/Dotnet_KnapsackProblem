@@ -23,8 +23,10 @@ namespace Knapsack_Problem
             solver.Solve(cap, generator.getItems());
 
             Console.WriteLine(generator);
+            Console.WriteLine("Rozwiązanie:");
             Console.WriteLine(solver);            
             Console.WriteLine("Weight: " + solver.getWeight() + " Value: " + solver.getValue());
+            Console.Write("Press any key to continue...");
             Console.ReadLine();
         }
     }

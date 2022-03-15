@@ -16,7 +16,7 @@ namespace Knapsack_Problem
             Random random = new Random(seed);
             for (int i = 0; i < n; i++)
             {
-                Item new_item = new Item(random.Next(1, 10), random.Next(1, 20));
+                Item new_item = new Item(i+1, random.Next(1, 10), random.Next(1, 20));
                 items.Add(new_item);
             }
         }
@@ -29,9 +29,9 @@ namespace Knapsack_Problem
         public override string ToString()
         {
             string str = string.Empty;
-            foreach(var it in items)
+            foreach(var item in items)
             {
-                str += "W: " + it.weight + " Val: " + it.value + "\n";
+                str += item.ToString() + "\n";
             }
             return str;
         }

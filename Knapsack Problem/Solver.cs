@@ -53,7 +53,7 @@ namespace Knapsack_Problem
             string str = string.Empty;
             foreach (Item item in knapsack)
             {
-                str += "W: " + item.weight + " V: " + item.value + "\n";
+                str += item.ToString() + "\n";
             }
             return str;
         }
