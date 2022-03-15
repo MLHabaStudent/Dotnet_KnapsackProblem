@@ -20,7 +20,7 @@ namespace Knapsack_Problem
 
             Generator generator = new Generator(n, seed);
             Solver solver = new Solver();
-            solver.Solve(cap, generator.getItems());
+            solver.SolveSort(cap, generator.getItems());
 
             Console.WriteLine(generator);
             Console.WriteLine("Rozwiązanie:");

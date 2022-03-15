@@ -33,6 +33,26 @@ namespace Knapsack_Problem
             }
         }
 
+        public void SolveSort(int cap, List<Item> items)
+        {
+            knapsack.Clear();
+            totalWeight = 0;
+            totalValue = 0;
+
+            List<Item> sorted = items;
+            sorted.Sort(Item.CompareItems);
+
+            foreach (Item item in sorted)
+            {
+                if (totalWeight + item.weight <= cap)
+                {
+                    knapsack.Add(item);
+                    totalWeight += item.weight;
+                    totalValue += item.value;
+                }
+            }
+        }
+
         public List<Item> getKnapsack()
         {
             return knapsack;

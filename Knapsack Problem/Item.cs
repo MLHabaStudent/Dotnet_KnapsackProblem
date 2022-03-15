@@ -17,6 +17,17 @@ namespace Knapsack_Problem
             this.value = value;
         }
 
+        public static int CompareItems(Item item1, Item item2)
+        {
+            if (item1.value / item1.weight > item2.value / item2.weight)
+                return -1;
+            else if (item1.value / item1.weight == item2.value / item2.weight)
+                return 0;
+            else
+                return 1;
+        }
+
+
         public override string ToString()
         {
             string str = id + "\tW: " + weight + "\tV: " + value;
